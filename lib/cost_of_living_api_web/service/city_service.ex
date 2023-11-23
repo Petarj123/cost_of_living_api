@@ -11,7 +11,7 @@ defmodule CostOfLivingApiWeb.Service.CityService do
     end
   end
 
-  def transform_data(col) do
+  defp transform_data(col) do
     %{
       city: col.city,
       country: col.country,
